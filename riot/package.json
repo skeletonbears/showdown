@@ -7,7 +7,8 @@
     "node_modules"
   ],
   "dependencies": {
-    "riot": "^3.4.2"
+    "riot": "^3.4.2",
+    "wretch": "^0.3.1"
   },
   "devDependencies": {
     "live-server": "^1.2.0"
