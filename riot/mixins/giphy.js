@@ -4,7 +4,7 @@ riot.mixin({
   _key: 'dc6zaTOxFJmzC',
 
   // API request url
-  _url: 'http://api.giphy.com/v1/gifs/search',
+  _url: 'https://api.giphy.com/v1/gifs/search',
 
   // Observable object
   giphy: riot.observable(),
