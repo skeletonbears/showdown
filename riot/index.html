@@ -12,10 +12,11 @@
   <body class="container">
     <header>
         <h1>Gifsearch</h1>
+        <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <search placeholder="Search for rad gifs"></search>
     </header>
-    <results></results>
+    <div id="container"></div>
 
     <!-- Mixins -->
     <script src="mixins/giphy.js"></script>
@@ -25,13 +26,17 @@
     <script src="tags/results.tag" type="riot/tag"></script>
     <script src="tags/spinner.tag" type="riot/tag"></script>
     <script src="tags/gif.tag" type="riot/tag"></script>
+    <script src="tags/about.tag" type="riot/tag"></script>
 
     <!-- Routes -->
     <script>
     route.start(true)
     route.base("/")
-    route("/about", function(collection) {
-      document.body.append("I made this!")
+    route("/", function() {
+      riot.mount("#container","results",)
+    })
+    route("/about", function() {
+      riot.mount("#container","about")
     })
     </script>
 
