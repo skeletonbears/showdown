@@ -17,6 +17,7 @@
         <search placeholder="Search for rad gifs"></search>
     </header>
     <div id="container"></div>
+    <results></results>
 
     <!-- Mixins -->
     <script src="mixins/giphy.js"></script>
@@ -30,10 +31,14 @@
 
     <!-- Routes -->
     <script>
+    // Activate route functionality
     route.start(true)
+
+    // Use real urls, not /#/
     route.base("/")
+
     route("/", function() {
-      riot.mount("#container","results",)
+      document.getElementById("container").innerHTML = "";
     })
     route("/about", function() {
       riot.mount("#container","about")
