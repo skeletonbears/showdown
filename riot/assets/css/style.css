@@ -16,3 +16,13 @@ h1{
   padding: 1rem;
   color: #012;
 }
+
+li{
+  list-style: none;
+}
+
+li a{
+  margin: 1.25rem;
+  color: #abc;
+  font-weight: 700;
+}

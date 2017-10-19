@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://unpkg.com/wretch"></script>
     <script src="assets/js/riot+compiler.min.js"></script>
+    <script src="assets/js/route.min.js"></script>
   </head>
   <body class="container">
     <header>
         <h1>Gifsearch</h1>
+        <li><a href="/about">About</a></li>
         <search placeholder="Search for rad gifs"></search>
     </header>
     <results></results>
@@ -23,6 +25,15 @@
     <script src="tags/results.tag" type="riot/tag"></script>
     <script src="tags/spinner.tag" type="riot/tag"></script>
     <script src="tags/gif.tag" type="riot/tag"></script>
+
+    <!-- Routes -->
+    <script>
+    route.start(true)
+    route.base("/")
+    route("/about", function(collection) {
+      document.body.append("I made this!")
+    })
+    </script>
 
     <!-- Mounts -->
     <script>
