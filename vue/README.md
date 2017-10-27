@@ -27,3 +27,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 4. npm run dev
 5. npm install -D sass-loader node-sass
 6. npm install -D vue-requests
+7. build the app
+8. when ready, deploy:
+9. npm run build
+10. REMOVE dist from .gitignore
+11. check out on raw git 
