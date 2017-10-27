@@ -31,4 +31,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 8. when ready, deploy:
 9. npm run build
 10. REMOVE dist from .gitignore
-11. check out on raw git 
+11. for now, cmd-F in index.html /static to ./static
+12. check out on raw git 
